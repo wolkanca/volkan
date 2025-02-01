@@ -1,115 +1,114 @@
 <!DOCTYPE html>
 <html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      id="viewport"
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <title>Volkan Cloudflare Pages</title>
 
-<head>
-	<meta charset="UTF-8">
-	<meta id="viewport" name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-	<title>Volkan Cloudflare Pages</title>
+    <style>
+      body,
+      html {
+        height: 100vh;
+        max-height: 100%;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background-color: #000;
+        color: #eee;
+        text-shadow: 0 0 #000;
+        overflow: hidden;
+      }
 
-	<style>
-		body,
-		html {
-			height: 100vh;
-			max-height: 100%;
-			margin: 0;
-			padding: 0;
-			border: 0;
-			background-color: #000;
-			color: #eee;
-			text-shadow: 0 0 #000;
-			overflow: hidden
-		}
+      body {
+        background: #ffffff1a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+      }
 
-		body {
-			background: #ffffff1a;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			align-content: center
-		}
+      .lds-ripple {
+        display: flex;
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin: auto;
+      }
 
-		.lds-ripple {
-			display: flex;
-			position: relative;
-			width: 300px;
-			height: 300px;
-			margin: auto
-		}
+      .lds-ripple div {
+        position: absolute;
+        border: 1px solid #bbb;
+        opacity: 1;
+        border-radius: 50%;
+        filter: drop-shadow(5px 5px 10px);
+        animation: lds-ripple 15s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+      }
 
-		.lds-ripple div {
-			position: absolute;
-			border: 1px solid #bbb;
-			opacity: 1;
-			border-radius: 50%;
-			filter: drop-shadow(5px 5px 10px);
-			animation: lds-ripple 15s cubic-bezier(0, .2, .8, 1) infinite
-		}
+      .lds-ripple div:nth-child(2) {
+        animation-delay: -5s;
+      }
 
-		.lds-ripple div:nth-child(2) {
-			animation-delay: -5s
-		}
+      @keyframes lds-ripple {
+        0% {
+          top: 150px;
+          left: 150px;
+          width: 0;
+          height: 0;
+          opacity: 1;
+        }
 
-		@keyframes lds-ripple {
-			0% {
-				top: 150px;
-				left: 150px;
-				width: 0;
-				height: 0;
-				opacity: 1
-			}
+        100% {
+          top: 0;
+          left: 0;
+          width: 300px;
+          height: 300px;
+          opacity: 0;
+        }
+      }
 
-			100% {
-				top: 0;
-				left: 0;
-				width: 300px;
-				height: 300px;
-				opacity: 0
-			}
-		}
+      main {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 2rem auto;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
-		main {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			margin: 2rem auto;
-			display: inline-flex;
-			flex-direction: column;
-			align-items: center
-		}
+      main,
+      a {
+        color: #d3d3d3;
+      }
 
-		main,
-		a {
-			color: #d3d3d3
-		}
+      ul#tumyazilar {
+        max-height: 75vh;
+        height: 35rem;
+        overflow: auto;
+        padding: 0;
+        margin: 0 auto;
+        list-style: none;
+        width: 95%;
+        max-width: 50rem;
+        flex: auto;
+      }
+    </style>
+  </head>
 
-		ul#tumyazilar {
-			max-height: 75vh;
-			height: 35rem;
-			overflow: auto;
-			padding: 0;
-			margin: 0 auto;
-			list-style: none;
-			width: 95%;
-			max-width: 50rem;
-			flex: auto;
-		}
-	</style>
+  <body>
+    <main>
+      <h1><a href="https://wolkanca.com/">Volkan Yılmaz</a></h1>
 
-</head>
-
-<body>
-	<main>
-		<h1><a href="https://wolkanca.com/">Volkan Yılmaz</a></h1>
-
-
-
-		<p><a href="https://twitter.com/wolkanca">@wolkanca</a></p>
-	</main>
-	<div class="lds-ripple">
-		<div></div>
-		<div></div>
-	</div>
-</body>
-
+      <p><a href="https://twitter.com/wolkanca">@wolkanca</a></p>
+    </main>
+    <div class="lds-ripple">
+      <div></div>
+      <div></div>
+    </div>
+  </body>
 </html>
